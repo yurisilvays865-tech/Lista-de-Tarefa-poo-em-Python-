@@ -1,76 +1,73 @@
-# 📝 Lista de Tarefas (POO em Python)
+# 📝 Lista de Tarefas – POO em Python
 
-Projeto desenvolvido para praticar Programação Orientada a Objetos (POO) em Python, com herança, polimorfismo e sobrescrita de métodos.
+Projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)** em Python.  
+O sistema permite criar, listar, concluir e filtrar tarefas — incluindo tarefas **prioritárias**, que herdam e estendem o comportamento da classe base `Tarefa`.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- Adicionar novas tarefas
-- Concluir tarefas
-- Exibir todas as tarefas com status (pendente/concluída)
-- Criar tarefas com diferentes níveis de **prioridade**
-- Filtrar tarefas (concluídas, pendentes, prioritárias)
-- Ordenar tarefas por prioridade (Alta → Média → Baixa)
+- ✅ Adicionar novas tarefas com título e descrição  
+- 🔁 Marcar tarefas como concluídas  
+- 🔍 Filtrar tarefas por status (pendentes, concluídas ou prioritárias)  
+- ⏫ Ordenar tarefas por nível de prioridade (`alta`, `média`, `baixa`)  
+- 💾 Estrutura orientada a objetos, com herança e sobrescrita de métodos
 
 ---
 
 ## 🧠 Conceitos de POO aplicados
 
-- **Classe base (`Tarefa`)** com atributos e métodos comuns  
-- **Herança:** classe `TarefaPrioritaria` deriva de `Tarefa`  
-- **Sobrescrita de método (`exibir`)** para personalizar a saída  
-- **Encapsulamento** com métodos getters  
-- **Composição:** classe `ListaDeTarefas` gerencia várias instâncias de `Tarefa`
+| Conceito | Aplicação |
+|-----------|------------|
+| **Classe e Objeto** | `Tarefa` e `TarefaPrioritaria` representam entidades do sistema |
+| **Encapsulamento** | Atributos privados e métodos getters |
+| **Herança** | `TarefaPrioritaria` herda de `Tarefa` |
+| **Polimorfismo / Sobrescrita** | Método `exibir()` redefinido na subclasse |
 
 ---
 
-## 🖥️ Exemplo de uso
+## ⚙️ Como executar o projeto
 
-```python
-t1 = Tarefa("Lavar o carro", "Lavar e encerar o carro da garagem")
-t2 = TarefaPrioritaria("Reunião da equipe", "Reunião sobre o novo projeto", "alta")
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/yurisilvays865-tech/Lista-de-Tarefa-poo-em-Python-.git
+Acesse a pasta do projeto
+
+bash
+Copiar código
+cd Lista-de-Tarefa-poo-em-Python-
+Execute o código
+
+bash
+Copiar código
+python "Projeto Lista de Tarefas com POO finalizado.py"
+📂 Estrutura do projeto
+css
+Copiar código
+📦 Lista-de-Tarefa-poo-em-Python-
+├── Projeto Lista de Tarefas com POO finalizado.py
+├── README.md
+└── (outros arquivos, se houver)
+🧩 Exemplo de uso
+python
+Copiar código
+tarefa1 = Tarefa("Lavar o carro", "Lavar e encerar o carro da garagem")
+tarefa2 = TarefaPrioritaria("Reunião da equipe", "Projeto novo", "alta")
 
 lista = ListaDeTarefas()
-lista.adicionar_tarefa(t1)
-lista.adicionar_tarefa(t2)
-
+lista.adicionar_tarefa(tarefa1)
+lista.adicionar_tarefa(tarefa2)
 lista.exibir_tarefas()
-
-
-Saída esperada:
-
-----lista de tarefas----
-1. Lavar o carro - pendente
-2. Reunião da equipe - pendente
-
-
-🧩 Tecnologias utilizadas
-
-Python 3.12
-
-Programação Orientada a Objetos (POO)
-
-Execução via terminal (CLI)
-
-📁 Estrutura do projeto
-lista-de-tarefas/
-│
-├── tarefa.py
-├── lista_de_tarefas.py
-├── main.py
-└── README.md
-
-
-(ou apenas um arquivo único, se estiver tudo no mesmo .py)
-
 👨‍💻 Autor
+Yuri Magalhães
+📫 GitHub
+💼 Estudante de Análise e Desenvolvimento de Sistemas
+🧠 Praticando Python e Programação Orientada a Objetos
 
-Desenvolvido por Yuri Magalhães – estudante de Análise e Desenvolvimento de Sistemas.
+🏁 Status do Projeto
+✅ Concluído – Projeto finalizado como parte do estudo de POO em Python.
+Em breve, será integrado ao portfólio no GitHub.
 
-
-🏁 Status do projeto
-
-✅ Finalizado e funcional
+“Aprender é transformar lógica em prática.” ✨
 
 
