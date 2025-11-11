@@ -1,6 +1,6 @@
 # 📝 Lista de Tarefas (POO em Python)
 
-Este é um projeto desenvolvido para praticar **Programação Orientada a Objetos (POO)** em Python, com foco em **herança**, **sobrescrita de métodos** e **organização de código**.
+Projeto desenvolvido para praticar Programação Orientada a Objetos (POO) em Python, com herança, polimorfismo e sobrescrita de métodos.
 
 ---
 
